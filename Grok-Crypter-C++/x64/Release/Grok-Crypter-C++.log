@@ -1,0 +1,9 @@
+﻿  Grok-Crypter-C++.cpp
+C:\Users\IndianSkibidiRizz\Documents\GitHub\CyberSecurity-RedTeaming\Grok-Crypter-C++\Grok-Crypter-C++\Grok-Crypter-C++.cpp(88,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\IndianSkibidiRizz\Documents\GitHub\CyberSecurity-RedTeaming\Grok-Crypter-C++\Grok-Crypter-C++\Grok-Crypter-C++.cpp(89,78): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  6 of 524 functions ( 1.1%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    24 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Grok-Crypter-C++.vcxproj -> C:\Users\IndianSkibidiRizz\Documents\GitHub\CyberSecurity-RedTeaming\Grok-Crypter-C++\x64\Release\Grok-Crypter-C++.exe
