@@ -1,4 +1,4 @@
-# FedX EEXE Crypter
+# FedX EXE Crypter
 
 A sophisticated executable crypting tool that encrypts and embeds PE files into PowerShell scripts with persistence capabilities.
 
