@@ -15,6 +15,13 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 - 🔄 Startup persistence mechanism
 - 🛡️ Execution policy bypass techniques
 
+## Detection
+
+✅ **Current detection rate: 0/60**  
+VirusTotal Scan: [View Results](https://www.virustotal.com/gui/file/a3d1736c2cf2d80ebc92afe288ff69734c9d70bf2a2d0b5575dccb096c8ebd78/detection)
+
+*Last scanned: 2023-11-15*
+
 ## How It Works
 
 1. Takes an input executable file
@@ -61,7 +68,9 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 ## Warning
 
 ⚠️ This tool is for educational purposes only.  
-⚠️ Use only on systems you own or have permission to test.
+⚠️ Use only on systems you own or have permission to test.  
+⚠️ The persistence mechanism may be flagged by security software.
+⚠️ The CMD / Powershell window will stay open on Windows 11 due to a bug.
 
 ## Author
 
