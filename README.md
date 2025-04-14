@@ -17,10 +17,10 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 
 ## Detection
 
-✅ **Current detection rate: 0/60**  
+✅ **Current detection rate: 0/61**  
 VirusTotal Scan: [View Results](https://www.virustotal.com/gui/file/a3d1736c2cf2d80ebc92afe288ff69734c9d70bf2a2d0b5575dccb096c8ebd78/detection)
 
-*Last scanned: 2023-11-15*
+*Last scanned: 2025-04-13*
 
 ## How It Works
 
