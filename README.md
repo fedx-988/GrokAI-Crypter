@@ -74,7 +74,7 @@ VirusTotal Scan: [View Results](https://www.virustotal.com/gui/file/a3d1736c2cf2
 
 ## Credits
 
-Thank you [KingKDot](https://github.com/KingKDot) for the [Powershell to BAT code](https://github.com/KingKDot/powershell2bat).
+Thank you [KingKDot](https://github.com/KingKDot) for the [Powershell to BAT code](https://github.com/KingKDot/powershell2bat).   
 Can't forget [Grok](https://grok.com) itself.
 
 ## Author
