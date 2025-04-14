@@ -72,10 +72,17 @@ VirusTotal Scan: [View Results](https://www.virustotal.com/gui/file/a3d1736c2cf2
 ⚠️ The persistence mechanism may be flagged by security software.  
 ⚠️ The CMD/Powershell window will stay open on Windows 11 due to a bug in the Windows terminal.
 
+## Credits
+
+Thank you [KingKDot](https://github.com/KingKDot) for the [Powershell to BAT code](https://github.com/KingKDot/powershell2bat).
+Can't forget [Grok](https://grok.com) itself.
+
 ## Author
 
 **fedx988**  
 - Telegram: @fedx988
+
+
 
 ## License
 
