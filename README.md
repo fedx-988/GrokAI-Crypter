@@ -72,7 +72,7 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 ⚠️ This tool is for educational purposes only.  
 ⚠️ Use only on systems you own or have permission to test.  
 ⚠️ The persistence mechanism and obfuscation may be flagged by security software.  
-⚠️ The CMD/PowerShell window may remain open on Windows 11 due to a bug in the terminal.
+⚠️ The CMD/PowerShell window will remain open on Windows 11 due to a bug in the terminal.
 
 ## Credits
 
