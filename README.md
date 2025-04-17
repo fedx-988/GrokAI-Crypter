@@ -15,7 +15,7 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 
 ## Detection
 
-✅ **Current detection rate: Not tested**  
+✅ **[Current detection rate: 0/61](https://www.virustotal.com/gui/file/fdfad1719cfcb21b467ec9dacf36539f427386a734e34c155f914b594cf5db99)**  
 *Last scanned: 2025/04/16*
 
 ## How It Works
