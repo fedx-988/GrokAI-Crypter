@@ -1,8 +1,8 @@
 ﻿  Grok-Crypter-C++.cpp
 C:\Users\IndianSkibidiRizz\Documents\GitHub\Grok-Crypter\Grok-Crypter-C++\Grok-Crypter-C++.cpp(194,34): warning C4101: 'e': unreferenced local variable
   Generating code
-  0 of 660 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  13 of 660 functions ( 2.0%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    59 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Grok-Crypter-C++.vcxproj -> C:\Users\IndianSkibidiRizz\Documents\GitHub\Grok-Crypter\x64\Release\Grok-Crypter-C++.exe

