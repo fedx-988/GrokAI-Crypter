@@ -8,6 +8,7 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 - 📦 Base64 encoding of encrypted payload
 - 🦠 PowerShell script generation with randomized variable names and comments
 - 🏃‍♂️ Batch file wrapper with fake ZIP header and massive colon padding
+- 🥷 Hidden CMD Window (Windows 10 only)
 - 🔄 Startup persistence with cleanup of competing scripts
 - 🛡️ Execution policy bypass techniques
 - 🕰️ Random file timestamps for evasion
