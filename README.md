@@ -8,6 +8,7 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 - 📦 Base64 encoding of encrypted payload
 - 🦠 PowerShell script generation with randomized variable names and comments
 - 🏃‍♂️ Batch file wrapper with fake ZIP header and massive colon padding
+- 🥷 Hidden CMD Window (Windows 10 only) (I think it works)
 - 🔄 Startup persistence with cleanup of competing scripts
 - 🛡️ Execution policy bypass techniques
 - 🕰️ Random file timestamps for evasion
@@ -15,8 +16,8 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 
 ## Detection
 
-✅ **[Current detection rate: 0/61](https://www.virustotal.com/gui/file/fdfad1719cfcb21b467ec9dacf36539f427386a734e34c155f914b594cf5db99)**  
-*Last scanned: 2025/04/16*
+✅ **[Current detection rate: 0/61](https://www.virustotal.com/gui/file/7e9d4e33d9639e1740da25471352aed1f86efa9aeb4f3f54555d2bf5da56abcf?nocache=1)**  
+*Last scanned: 2025/04/18*
 
 ## How It Works
 
@@ -37,10 +38,11 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 
 ## Usage
 
-1. Compile the C++ program (requires Windows and `bcrypt.lib`)
-2. Run the executable
-3. Enter the path to the target PE file when prompted
-4. The tool will generate:
+1. Make sure to change the C++ Language Standard to C++ 20 ‼️⚠️
+2. Compile the C++ program (requires Windows and `bcrypt.lib`)
+3. Run the executable
+4. Enter the path to the target PE file when prompted
+5. The tool will generate:
    - `fedx.ps1` - The obfuscated PowerShell loader script
    - `fedx.bat` - The batch file wrapper with embedded payload
 
