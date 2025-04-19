@@ -38,7 +38,7 @@ A sophisticated executable crypting tool that encrypts and embeds PE files into 
 
 ## Usage
 
-1. Make sure to change the C++ Language Standard to C++ 20
+1. Make sure to change the C++ Language Standard to C++ 20 ‼️⚠️
 2. Compile the C++ program (requires Windows and `bcrypt.lib`)
 3. Run the executable
 4. Enter the path to the target PE file when prompted
